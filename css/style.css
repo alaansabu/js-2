@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body{
+background-image: url("/image/tbl.jpg");
+
+    color: rgba(227, 238, 7, 0.829);
+
+font-family: "Lobster", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
+.messages{
+    color: aliceblue;
+    margin-top: 21%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#start-el{
+    width: 180px;
+    height: 40px;
+    background-color: rgba(227, 238, 7, 0.829);
+    color:#016f32;
+border: none;
+border-radius: 40px;
+}
