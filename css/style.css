@@ -30,3 +30,15 @@ h1{
 border: none;
 border-radius: 40px;
 }
+
+#newcard-el{
+    display: block;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 180px;
+    height: 40px;
+    background-color: rgba(227, 238, 7, 0.829);
+    color:#016f32;
+border: none;
+border-radius: 40px;
+}
