@@ -1,5 +1,7 @@
 let firstcard = 11;
 let secondcard = 10;
+let card = [firstcard,secondcard]
+
 let sum = firstcard + secondcard;
 let hasBlackjack = false;
 let isAlive = true;
@@ -9,8 +11,8 @@ let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 
 let message;
-
-function start() {
+let render=
+function render() {
     if (sum < 21) {
         message = "Do you want to pick a new card?";
     } else if (sum === 21) {
@@ -22,7 +24,7 @@ function start() {
     }
 
     sumEl.textContent = "Sum: " + sum;
-    cardEl.textContent = "Cards: " + firstcard + " " + secondcard;
+    cardEl.textContent = "Cards: " + card[0]+ " " + card[1];
     messageEl.textContent = message;
 }
 
@@ -30,10 +32,16 @@ function newcard() {
     console.log("Selecting a new card");
     let newcard = 5; 
     sum += newcard;
+    render()
+    card.push(newcard)
+console.log(card);
 
-    message = "New card drawn!";
+/*     message = "New card drawn!";
 
     sumEl.textContent = "Sum: " + sum;
     cardEl.textContent = "Cards: " + firstcard + " " + secondcard + " " + newcard;
-    messageEl.textContent = message;
+    messageEl.textContent = message; */
+}
+function start(){
+    render()
 }
