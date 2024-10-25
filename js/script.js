@@ -1,6 +1,6 @@
 let firstcard = 11;
 let secondcard = 10;
-let card = [firstcard,secondcard]
+let card = [firstcard, secondcard];
 
 let sum = firstcard + secondcard;
 let hasBlackjack = false;
@@ -11,8 +11,15 @@ let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 
 let message;
-let render=
+
 function render() {
+    // Display all cards from the array
+    cardEl.textContent = "Cards: ";
+    for (let i = 0; i < card.length; i++) {
+        cardEl.textContent += card[i] + " ";
+    }
+
+    // Display message based on sum
     if (sum < 21) {
         message = "Do you want to pick a new card?";
     } else if (sum === 21) {
@@ -23,25 +30,19 @@ function render() {
         isAlive = false;
     }
 
+    // Update sum and message elements
     sumEl.textContent = "Sum: " + sum;
-    cardEl.textContent = "Cards: " + card[0]+ " " + card[1];
     messageEl.textContent = message;
 }
 
 function newcard() {
     console.log("Selecting a new card");
-    let newcard = 5; 
+    let newcard = 5;
     sum += newcard;
-    render()
-    card.push(newcard)
-console.log(card);
-
-/*     message = "New card drawn!";
-
-    sumEl.textContent = "Sum: " + sum;
-    cardEl.textContent = "Cards: " + firstcard + " " + secondcard + " " + newcard;
-    messageEl.textContent = message; */
+    card.push(newcard); // Add new card to the array
+    render(); // Re-render after adding the new card
 }
-function start(){
-    render()
+
+function start() {
+    render(); // Initial render when the game starts
 }

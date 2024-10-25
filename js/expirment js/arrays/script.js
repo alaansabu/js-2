@@ -1,6 +1,7 @@
-let arr1 = ["my name is alan sabu","been good how is your day","nothing","fuck oof","assholes","billy butcher "]
+let message= ["my name is alan sabu","been good how is your day","nothing","fuck oof","assholes","billy butcher"]
+let greetingEl=document.getElementById("greeting-el")
 
-for(i=0;i<arr1.length;i+=1){
-    console.log(arr1[i]);
-    
+for(let i=0;i<message.length;i++){
+
+    greetingEl.textContent+=message[i]
 }
