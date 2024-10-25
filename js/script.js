@@ -13,13 +13,11 @@ let cardEl = document.getElementById("card-el");
 let message;
 
 function render() {
-    // Display all cards from the array
     cardEl.textContent = "Cards: ";
     for (let i = 0; i < card.length; i++) {
         cardEl.textContent += card[i] + " ";
     }
 
-    // Display message based on sum
     if (sum < 21) {
         message = "Do you want to pick a new card?";
     } else if (sum === 21) {
@@ -30,7 +28,6 @@ function render() {
         isAlive = false;
     }
 
-    // Update sum and message elements
     sumEl.textContent = "Sum: " + sum;
     messageEl.textContent = message;
 }
@@ -39,10 +36,10 @@ function newcard() {
     console.log("Selecting a new card");
     let newcard = 5;
     sum += newcard;
-    card.push(newcard); // Add new card to the array
-    render(); // Re-render after adding the new card
+    card.push(newcard); 
+    render(); 
 }
 
 function start() {
-    render(); // Initial render when the game starts
+    render(); 
 }
