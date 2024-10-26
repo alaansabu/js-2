@@ -1,7 +1,6 @@
-let message= ["my name is alan sabu","been good how is your day","nothing","fuck oof","assholes","billy butcher"]
-let greetingEl=document.getElementById("greeting-el")
+let mathPorblem = Math.random()*9;
+let output =Math.floor(mathPorblem)
 
-for(let i=0;i<message.length;i++){
 
-    greetingEl.textContent+=message[i]
-}
+
+ console.log(output);

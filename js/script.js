@@ -1,11 +1,9 @@
-let firstcard = 11;
-let secondcard = 10;
+let firstcard = getRandomCard()
+let secondcard = getRandomCard()
 let card = [firstcard, secondcard];
-
 let sum = firstcard + secondcard;
 let hasBlackjack = false;
 let isAlive = true;
-
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
@@ -34,7 +32,7 @@ function render() {
 
 function newcard() {
     console.log("Selecting a new card");
-    let newcard = 5;
+    let newcard = getRandomCard()
     sum += newcard;
     card.push(newcard); 
     render(); 
@@ -42,4 +40,7 @@ function newcard() {
 
 function start() {
     render(); 
+}
+function getRandomCard(){
+    return 5
 }
