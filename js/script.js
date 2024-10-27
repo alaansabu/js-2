@@ -42,5 +42,16 @@ function start() {
     render(); 
 }
 function getRandomCard(){
-    return 5
+    let mathPorblem = Math.floor(Math.random()*13)+1
+    if (mathPorblem>10){
+        return 10;
+    }
+    else  if (mathPorblem===1){
+return 11   
+}
+else{
+    return mathPorblem
+}
+
+
 }
