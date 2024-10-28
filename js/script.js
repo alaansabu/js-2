@@ -16,7 +16,6 @@ let player = {
 creditEl.innerText= player.name+ ": "+ player.earnings
 
 function render() {
- 
 
     cardEl.textContent = "Cards: ";
     for (let i = 0; i < card.length; i++) {
