@@ -6,10 +6,7 @@ let isAlive = true;
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
-<<<<<<< HEAD
 let creditEl = document.getElementById("credit-el");
-=======
->>>>>>> 0694cdb562275458ce4e883d3793a3625560b6e1
 let message;
 let playerName ="Alan";
 let credit = 0;
