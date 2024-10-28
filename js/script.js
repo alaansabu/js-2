@@ -8,9 +8,12 @@ let sumEl = document.getElementById("sum-el");
 let cardEl = document.getElementById("card-el");
 let creditEl = document.getElementById("credit-el");
 let message;
-let playerName ="Alan";
-let credit = 0;
-creditEl.innerText= playerName+ ": "+ credit
+let player = {
+    name: "Alan",
+    earnings: "$"+162
+}
+
+creditEl.innerText= player.name+ ": "+ player.earnings
 
 function render() {
  
@@ -45,15 +48,8 @@ function newcard() {
         sum += newcard;
         card.push(newcard); 
         render(); 
-
-        
-            
+     }
     }
-   
-    
-    }
- 
-
 
 function start() {
     
