@@ -49,15 +49,9 @@ function newcard() {
         card.push(newcard); 
         render(); 
 
-        
-            
-    }
-   
-    
+          }
     }
  
-
-
 function start() {
     
     isAlive=true;
