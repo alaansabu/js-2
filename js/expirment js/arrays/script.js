@@ -1,6 +1,11 @@
-let mathPorblem = Math.random()*9;
-let output =Math.floor(mathPorblem)
+let movies = true
+let Documentries = false
 
+if (movies===true || fun2===Documentries){
+    recomentMovies()
+}
 
-
- console.log(output);
+function recomentMovies(){
+    console.log("yayyyyyyyyyyyyyyyyyyyyyyyyyyyy");
+    
+}
